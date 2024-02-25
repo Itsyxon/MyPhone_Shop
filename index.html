@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MyPhone Original</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="favicon.png">
 </head>
 
 <body>
@@ -14,7 +15,13 @@
             <h1 class="header__title-text">MyPhone</h1>
             <div class="header__title-extratext">Лидер среди гаджетов!</div>
         </div>
+        <button class="menu-btn">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
         <nav class="nav">
+
             <ul class="menu">
                 <li class="menu__item"><a class="menu__link" href="#about">Что такое MyPhone?</a></li>
                 <li class="menu__item"><a class="menu__link" href="#advantages">Преимущества MyPhone</a></li>
@@ -40,7 +47,7 @@
                             фотографиях.</p>
                         <p>Надежная батарея обеспечит вам долгое время автономной работы устройства, а
                             быстрая зарядка позволит быстро восстановить заряд батареи.</p>
-                        <button>Заказать</button>
+                        <a href="#buy"><button>Заказать</button></a>
                     </div>
                 </div>
             </div>
@@ -63,7 +70,8 @@
                     </div>
                     <div class="single__adv">
                         <img src="images/icon_battery.png" alt="">
-                        <p>Емкий аккумулятор, обеспечивающий длительное время автономной работы.</p>
+                        <p>Технология
+                            перезаряжаемых литий-ионных аккумуляторов самая лучшая из доступных на сегодняшний день.</p>
                     </div>
                     <div class="single__adv">
                         <img src="images/icon_2camera.png" alt="">
@@ -86,13 +94,13 @@
                         <img src="images/phoneicon.svg" alt="">
                         <p class="single__name">MyPhone Black 1Tb</p>
                         <p class="price__number">89.500 ₽</p>
-                        <button>Купить</button>
+                        <a href="#buy"><button>Купить</button></a>
                     </div>
                     <div class="single__price">
                         <img src="images/phonered.svg" alt="">
                         <p class="single__name">MyPhone Red 1Tb</p>
                         <p class="price__number">99.500 ₽</p>
-                        <button>Купить</button>
+                        <a href="#buy"><button>Купить</button></a>
                     </div>
 
                 </div>
@@ -130,6 +138,7 @@
             </div>
         </div>
     </footer>
+    <script src="js/script.js"></script>
 </body>
 
 </html>
