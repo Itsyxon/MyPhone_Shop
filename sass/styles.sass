@@ -1,0 +1,226 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap')
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap')
+
+*
+    margin: 0
+    padding: 0
+    box-sizing: border-box
+    font-family: "Rubik", sans-serif
+    list-style-type: none
+    text-decoration: none
+    scroll-behavior: smooth
+
+@mixin flex
+    display: flex
+    justify-content: center
+    align-items: center
+
+body
+    background-color: #ffffff
+
+.container
+    max-width: 960px
+    margin: auto
+.header
+    display: flex
+    flex-direction: column
+.header__title
+    text-align: center
+    padding: 45px
+
+.header__title-text
+    font-size: 66px
+    font-weight: 500
+    letter-spacing: 1.2px
+    background-image: linear-gradient(180deg, #520991, #a805ae)
+    color: transparent
+    background-clip: text
+    -webkit-background-clip: text
+
+.header__title-extratext
+    font-weight: 500
+    font-size: 27px
+    color: #404040
+
+.nav
+    display: flex
+    justify-content: center
+    align-items: center
+    border-bottom: 1px solid #bebebe
+    border-top: 1px solid #bebebe
+    background-color: #e0e0e0
+
+.menu
+    display: flex
+.menu__item
+    padding: 20px 30px
+    transition: .3s all
+    &:hover
+        background-color: #7a488c
+        .menu__link
+            color: beige
+
+.menu__link
+    font-size: 19px
+    color: #111113
+    padding: 15px
+    font-weight: 500
+h2, h3, h4, h5
+    font-size: 46px
+    font-weight: 400
+    font-family: 'Oswald'
+    letter-spacing: 1px
+section
+    padding: 100px 0
+.about
+    background-image: url(images/schemes.jpg)
+    background-size: cover
+    background-repeat: no-repeat
+.about__wrapper
+    display: flex
+    justify-content: space-between
+    align-items: center
+    gap: 40px
+.about__picture img
+    max-width: 500px
+.about__info
+    p
+        font-size: 18px
+        margin: 25px 0
+        line-height: 1.5
+    button
+        padding: 20px 80px
+        color: white
+        font-weight: 400
+        background-image: linear-gradient(45deg, #520991, #b861d7)
+        font-size: 24px
+        border: none
+        border-radius: 50px
+        cursor: pointer
+        box-shadow: 1px 2px 3px black
+.advantages
+    background-color: #e0e0e0
+    border-bottom: 1px solid #bebebe
+    border-top: 1px solid #bebebe
+    p
+
+.advantages__wrapper
+    display: flex
+    justify-content: space-between
+    padding: 80px 0
+    flex-wrap: wrap
+    gap: 40px
+.single__adv
+    display: flex
+    flex-direction: column
+    align-items: center
+    max-width: 250px
+    gap: 20px
+    p
+        text-align: center
+        font-size: 17px
+.learnmore
+    text-align: center
+    a
+        color: #3a3aa4
+
+.price
+
+.price__wrapper
+    display: flex
+    justify-content: space-around
+    align-items: center
+    margin-top: 50px
+.single__price
+    display: flex
+    flex-direction: column
+    align-items: center
+    gap: 30px
+    .single__name
+        font-size: 28px
+        font-weight: 500
+    .price__number
+        font-size: 30px
+        font-weight: 400
+    img
+        max-width: 220px
+        transition: .3s all
+        cursor: pointer
+        &:hover
+            transform: scale(1.2)
+    .learnmore
+        font-size: 20px
+    button
+        padding: 10px 40px
+        color: white
+        font-weight: 400
+        background-image: linear-gradient(45deg, #520991, #b861d7)
+        font-size: 18px
+        border: none
+        cursor: pointer
+        box-shadow: 1px 2px 3px black
+.buy
+    background-color: #e0e0e0
+    border-bottom: 1px solid #bebebe
+    border-top: 1px solid #bebebe
+
+.buy__form
+    padding: 50px
+    background-color: white
+    margin: 30px 0
+    border-radius: 15px
+    display: flex
+    flex-direction: column
+
+    label
+        margin: 15px 25px
+        font-weight: 500
+        font-size: 22px
+    input
+        padding: 20px 25px
+        font-size: 20px
+        border: 1px solid #e0e0e0
+        border-radius: 50px
+        &:focus
+            outline: none
+    textarea
+        padding: 20px 25px
+        font-size: 18px
+        border: 1px solid #e0e0e0
+        border-radius: 50px
+        resize: vertical
+        overflow: hidden
+        &:focus
+            outline: none
+    select
+        padding: 20px 25px
+        font-size: 20px
+        border: 1px solid #e0e0e0
+        border-radius: 50px
+
+        &:focus
+            outline: none
+    option
+
+.form__title
+    font-size: 24px
+    margin: 20px 25px
+.form__button
+    padding: 10px 40px
+    color: white
+    font-weight: 400
+    background-image: linear-gradient(45deg, #520991, #b861d7)
+    font-size: 18px
+    border: none
+    cursor: pointer
+    box-shadow: 1px 2px 3px black
+    width: 20%
+    margin-top: 30px
+    border-radius: 50px
+    align-self: flex-end
+footer
+    background-color: black
+    padding: 20px 0
+    color: white
+    font-size: 20px
+    text-align: center

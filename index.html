@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MyPhone Original</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header class="header">
+        <div class="header__title">
+            <h1 class="header__title-text">MyPhone</h1>
+            <div class="header__title-extratext">Лидер среди гаджетов!</div>
+        </div>
+        <nav class="nav">
+            <ul class="menu">
+                <li class="menu__item"><a class="menu__link" href="#about">Что такое MyPhone?</a></li>
+                <li class="menu__item"><a class="menu__link" href="#advantages">Преимущества MyPhone</a></li>
+                <li class="menu__item"><a class="menu__link" href="#price">Прайс-лист</a></li>
+                <li class="menu__item"><a class="menu__link" href="#buy">Купить MyPhone</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main class="main">
+        <section class="about" id="about">
+            <div class="container">
+                <div class="about__wrapper">
+                    <div class="about__picture">
+                        <img src="images/myphone.jpg" alt="">
+                    </div>
+                    <div class="about__info">
+                        <h2>Что такое MyPhone?</h2>
+                        <p>Мы представляем вам технологичный гаджет нового поколения - MyPhone! Этот смартфон сочетает в
+                            себе высокую производительность, стильный дизайн и передовые технологии.</p>
+                        <p>MyPhone оснащен мощным процессором, который обеспечивает плавную и быструю работу устройства
+                            даже при выполнении самых ресурсоемких задач. Благодаря большому дисплею с высоким
+                            разрешением вы сможете насладиться качественным изображением при просмотре видео, играх и
+                            фотографиях.</p>
+                        <p>Надежная батарея обеспечит вам долгое время автономной работы устройства, а
+                            быстрая зарядка позволит быстро восстановить заряд батареи.</p>
+                        <button>Заказать</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="advantages" id="advantages">
+            <div class="container">
+                <h3>Преимущества MyPhone</h3>
+                <div class="advantages__wrapper">
+                    <div class="single__adv">
+                        <img src="images/icon_ec.png" alt="">
+                        <p>Большой и яркий дисплей для комфортного просмотра контента.</p>
+                    </div>
+                    <div class="single__adv">
+                        <img src="images/icon_water.png" alt="">
+                        <p>MyPhone устойчив к брызгам, воде и пыли.</p>
+                    </div>
+                    <div class="single__adv">
+                        <img src="images/icon_ceramic.png" alt="">
+                        <p>Большой объем встроенной памяти и возможность расширения с помощью карт памяти.</p>
+                    </div>
+                    <div class="single__adv">
+                        <img src="images/icon_battery.png" alt="">
+                        <p>Емкий аккумулятор, обеспечивающий длительное время автономной работы.</p>
+                    </div>
+                    <div class="single__adv">
+                        <img src="images/icon_2camera.png" alt="">
+                        <p>Отличное качество камеры для съемки высококачественных фотографий и видео.</p>
+                    </div>
+                    <div class="single__adv">
+                        <img src="images/ar_icon__ba7cikgtbwf6_large.png" alt="">
+                        <p>Поддержка новейших технологий и функций, таких как сканер отпечатков пальцев или
+                            распознавание лица.</p>
+                    </div>
+                </div>
+                <p class="learnmore"><a href="#">Узнать больше ></a></p>
+            </div>
+        </section>
+        <section class="price" id="price">
+            <div class="container">
+                <h4>Прайс-лист</h4>
+                <div class="price__wrapper">
+                    <div class="single__price">
+                        <img src="images/phoneicon.svg" alt="">
+                        <p class="single__name">MyPhone Black 1Tb</p>
+                        <p class="price__number">89.500 ₽</p>
+                        <button>Купить</button>
+                    </div>
+                    <div class="single__price">
+                        <img src="images/phonered.svg" alt="">
+                        <p class="single__name">MyPhone Red 1Tb</p>
+                        <p class="price__number">99.500 ₽</p>
+                        <button>Купить</button>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+        <section class="buy" id="buy">
+            <div class="container">
+                <h5>Купить MyPhone</h5>
+                <form class="buy__form" method="POST" action="php/thanks.php">
+                    <div class="form__title">Заполните форму для доставки</div>
+                    <label for="name">Имя:</label>
+                    <input type="text" required name="name" placeholder="Введите ваше имя..">
+                    <label for="name">Фамилия:</label>
+                    <input type="text" required name="lastname" placeholder="Введите вашу фамилию..">
+                    <label for="address">Адрес:</label>
+                    <textarea required name="address" placeholder="Введите ваш адрес.."></textarea>
+                    <label for="phone">Телефон:</label>
+                    <input type="tel" placeholder="Телефон.." name="phone">
+                    <label for="model">Товар:</label>
+                    <select name="model" required>
+                        <option value="1">MyPhone Black</option>
+                        <option value="2">MyPhone Red</option>
+                    </select>
+                    <label for="amount">Количество:</label>
+                    <input type="number" required minlength="1" maxlength="10" name="amount" placeholder="Количество..">
+                    <button name="submit_form" class="form__button" value="submited">Заказать</button>
+                </form>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="container">
+            <div class="footer__text">
+                © Daniil Itsyxon
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
