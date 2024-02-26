@@ -14,12 +14,12 @@ if ($model == 1) {
 }
 
 if ($amount <= 0) {
-    $error = 'Неверно введено количество товара';
+    $errors = 'Неверно введено количество товара';
 }
 
 ?>
 
-<?php if (!isset($error)) { ?>
+<?php if (!isset($errors)) { ?>
     <!DOCTYPE html>
     <html lang="ru">
 
@@ -48,7 +48,7 @@ if ($amount <= 0) {
 
     </html>
 <?php } else {
-    if (isset($error)) {
-        echo $error;
+    if (isset($errors)) {
+        echo $errors;
     }
 } ?>
