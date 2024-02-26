@@ -85,6 +85,7 @@ h2, h3, h4, h5, h6
     font-weight: 400
     font-family: 'Oswald'
     letter-spacing: 1px
+
 section
     padding: 100px 0
 .about
@@ -266,6 +267,46 @@ footer
     font-size: 20px
     text-align: center
 
+.header__light
+    background-color: #111113
+    color: white
+    .header__title-extratext
+        color: beige
+    .nav
+        background-color: #111113
+        a
+            color: beige
+
+.about__light
+    background-color: #111113
+    color: beige
+    background-image: none
+
+.advantages__light
+    background-color: #111113
+    color: beige
+
+.price__light
+    background-color: #111113
+    color: beige
+
+.buy__light
+    background-color: #111113
+    color: beige
+    .buy__form
+        background-color: #111113
+        color: beige
+.icons, .hide-icons
+    @include flex
+    gap: 20px
+.display__none
+    display: none
+
+#sun, #moon, #sun-light, #moon-light
+    background: none
+    border: none
+    margin-top: 5px
+    cursor: pointer
 @media (max-width: 1050px)
     .menu
         display: none
