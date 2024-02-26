@@ -80,7 +80,7 @@ body
     color: #111113
     padding: 15px
     font-weight: 500
-h2, h3, h4, h5
+h2, h3, h4, h5, h6
     font-size: 46px
     font-weight: 400
     font-family: 'Oswald'
@@ -178,6 +178,59 @@ section
         border: none
         cursor: pointer
         box-shadow: 1px 2px 3px black
+.gallery
+    background-color: #320957be
+    color: white
+.wrapper
+    position: relative
+    width: 100%
+    @include flex
+    margin: 40px 0
+.slider
+    position: relative
+    overflow: hidden
+    max-width: 1000px
+    height: auto
+.slider__nav
+    position: absolute
+    bottom: 25px
+    width: 100%
+    display: flex
+    justify-content: center
+    .slider__nav-item
+        width: 40px
+        height: 12px
+        border: 2px solid white
+        margin: 5px
+        cursor: pointer
+        transition: .4s all
+        &:hover
+            background-color: white
+#s1:checked~.s1
+    margin-left: 0
+
+#s2:checked~.s1
+    margin-left: -20%
+
+#s3:checked~.s1
+    margin-left: -40%
+
+#s4:checked~.s1
+    margin-left: -60%
+
+.slider__items
+    width: 500%
+    height: 100%
+    display: flex
+    .item
+        width: 20%
+        transition: .7s all
+        img
+            max-width: 100%
+            border-radius: 10px
+    input
+        position: absolute
+        visibility: hidden
 .buy
     background-color: #e0e0e0
     border-bottom: 1px solid #bebebe
