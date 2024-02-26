@@ -71,7 +71,7 @@ body
     padding: 20px 30px
     transition: .3s all
     &:hover
-        background-color: #7a488c
+        background-color: #520991
         .menu__link
             color: beige
 
@@ -183,7 +183,7 @@ section
     background-position: center
     background-attachment: fixed
     color: white
-    height: 300px
+    height: 400px
 .buy
     background-color: #e0e0e0
     border-bottom: 1px solid #bebebe
@@ -242,6 +242,23 @@ section
     margin-top: 30px
     border-radius: 50px
     align-self: flex-end
+.gotop
+    position: fixed
+    right: 60px
+    bottom: 5%
+    background-color: #520991
+    border-radius: 50%
+    width: 50px
+    height: 50px
+    text-align: center
+    transform: translateY(-45%)
+    cursor: pointer
+    transition: .4s all
+    display: none
+    img
+        margin-top: 10px
+.gotop-show
+    display: block
 footer
     background-color: #111113
     padding: 20px 0
@@ -314,7 +331,8 @@ footer
         a
             color: white
             font-size: 25px
-
+    .gallery
+        height: 200px
     .menu.menu-active
         transform: translateX(0)
     .about__info
